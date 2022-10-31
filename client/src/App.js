@@ -1,6 +1,7 @@
 import react from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
+import RollercoasterCard from './components/RollercoasterCard'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/rollercoasters" element={<RollercoasterCard />} />
         </Routes>
       </main>
     </div>
