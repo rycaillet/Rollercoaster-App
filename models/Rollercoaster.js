@@ -10,7 +10,7 @@ const Rollercoaster = new Schema(
     Inversions: { type: String, required: true },
     Duration: { type: String, required: true },
     Image: { type: String, required: true },
-    HeightRequirement: { type: Number, required: true }
+    HeightRequirement: { type: String, required: true }
   },
   { timestamps: true }
 )

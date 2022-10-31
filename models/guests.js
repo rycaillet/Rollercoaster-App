@@ -4,7 +4,7 @@ const guestSchema = new Schema(
   {
     name: { type: String, required: true },
     age: { type: Number, required: true },
-    height: { type: Number, required: true }
+    height: { type: String, required: true }
   },
   { timestamps: true }
 )

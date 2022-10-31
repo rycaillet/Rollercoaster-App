@@ -15,7 +15,7 @@ const main = async () => {
       Duration: '1:50',
       Image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/anaconda-banner.jpg',
-      HeightRequirement: 48
+      HeightRequirement: '4ft'
     },
     {
       Name: 'Flight of Fear',
@@ -27,7 +27,7 @@ const main = async () => {
       Duration: '2:24',
       Image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/flight-of-fear-banner.jpg',
-      HeightRequirement: 54
+      HeightRequirement: '4ft, 5in'
     },
     {
       Name: 'Intimidator 305',
@@ -39,7 +39,7 @@ const main = async () => {
       Duration: '3:00',
       Image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/intimidator-305-banner.jpg',
-      HeightRequirement: 54
+      HeightRequirement: '4ft, 5in'
     },
     {
       Name: 'Twisted Timbers',
@@ -51,7 +51,7 @@ const main = async () => {
       Duration: '2:00',
       Image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/twisted-timbers-banner.jpg',
-      HeightRequirement: 48
+      HeightRequirement: '4ft'
     }
   ]
   await Rollercoaster.insertMany(rollercoasters)
