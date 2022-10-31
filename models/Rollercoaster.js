@@ -2,11 +2,11 @@ const { Schema } = require('mongoose')
 
 const Rollercoaster = new Schema(
   {
-    name: { type: String, required: true },
+    Name: { type: String, required: true },
     Manufacturer: { type: String, required: true },
-    Speed: { type: Number, required: true },
+    Speed: { type: String, required: true },
     Height: { type: String, required: true },
-    Length: { type: Number, required: true },
+    Length: { type: String, required: true },
     Inversions: { type: String, required: true },
     Duration: { type: String, required: true },
     Image: { type: String, required: true },
