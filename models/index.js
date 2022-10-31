@@ -1,10 +1,10 @@
 const moongoose = require('mongoose')
 
-const Rollercoaster = require('./rollercoaster')
-const Guests = require('./guests')
+const RollercoasterSchema = require('./rollercoaster')
+const GuestsSchema = require('./guests')
 
-const Rollercoaster = moongoose.model('Rollercoaster', rollercoasterSchema)
-const Guests = moongoose.model('Guests', guestSchema)
+const Rollercoaster = moongoose.model('Rollercoaster', RollercoasterSchema)
+const Guests = moongoose.model('Guests', GuestsSchema)
 
 module.exports = {
   Rollercoaster,

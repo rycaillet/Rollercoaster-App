@@ -1,5 +1,5 @@
 const db = require('../db')
-const { guestSchema } = require('../models')
+const { Guests } = require('../models')
 
 // Connect to the database
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
@@ -28,7 +28,7 @@ const main = async () => {
     }
   ]
 
-  await guestSchema.insertMany(guests)
+  await Guests.insertMany(guests)
   console.log('Created some guests')
 }
 const run = async () => {
