@@ -25,3 +25,5 @@ app.get('/*', (req, res) => {
 })
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+
+//mongodb+srv://rycaillet:1234@rollercoaster-app.wbjt10t.mongodb.net/?retryWrites=true&w=majority

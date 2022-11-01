@@ -1,6 +1,6 @@
 const moongoose = require('mongoose')
 
-const RollercoasterSchema = require('./rollercoaster')
+const RollercoasterSchema = require('./Rollercoaster')
 const GuestsSchema = require('./guests')
 
 const Rollercoaster = moongoose.model('Rollercoaster', RollercoasterSchema)
