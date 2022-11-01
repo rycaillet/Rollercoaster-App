@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
 body {
   background-color: aqua;
 }
@@ -75,3 +80,31 @@ grid-gap: 1em
     transform: translateY(5px);
     box-shadow: 0 2px 0 #222;
 } 
+
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(0, 19, 95);
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+h1 {
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+.main-page-image {
+  display: flex;
+  height: 70%;
+  width: 80%;
+  max-width: 80vh;
+  max-height: 90vw;
+  border-radius: 10px;
+  align-items: center;
+  margin: 0 auto;
+  object-fit: cover;
+}
