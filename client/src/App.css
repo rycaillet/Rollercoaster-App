@@ -7,10 +7,32 @@ body {
   background-color: aqua;
 }
 
+.rollercoasterDetails {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.GuestDetails {
+  display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;
+width: 90vw;
+margin: 0 auto;
+}
+
 .rollercoaster-list {
-display: grid;
-grid-template-columns: repeat(auto-fill, 500px);
-grid-gap: 1em
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;
+width: 90vw;
+margin: 0 auto;
+flex-flow: wrap row;  
 }
 
 .rollercoaster-card {
@@ -33,14 +55,19 @@ grid-gap: 1em
 }
 
 .guest-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  grid-gap: 1em;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  flex-flow: wrap row; 
   }
   
   .guest-card {
-    border: 1px solid black
+    border: 1px solid black;
+    height: 200px;
+    width: 175px;
   }
   
   .guest-card:hover {
@@ -74,6 +101,7 @@ grid-gap: 1em
     cursor: pointer;
     box-shadow: 0 6px 0 black;
     transition: 0.2s;
+    margin: 100px auto;
   }
 
   button:hover {
@@ -107,4 +135,15 @@ h1 {
   align-items: center;
   margin: 0 auto;
   object-fit: cover;
+}
+
+.form {
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+input {
+  padding: 5px;
+  margin: 10px;
 }

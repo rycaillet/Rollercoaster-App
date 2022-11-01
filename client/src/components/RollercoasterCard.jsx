@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 
-const Base_URL = '/api'
+const Base_URL = 'http://localhost:3001/api'
 
 const RollercoasterCard = () => {
   const [rollercoasters, setRollercoasters] = useState([])
@@ -20,7 +20,7 @@ const RollercoasterCard = () => {
 
 
   return (
-    <div className="main">
+    <div className="rollercoaster-main">
       <h1>Rollercoasters</h1>
       <section className = "rollercoaster-list">
         {rollercoasters?.map((rollercoaster) => (

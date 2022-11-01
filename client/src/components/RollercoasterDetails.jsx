@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
 
-const Base_URL = '/api'
+const Base_URL = 'http://localhost:3001/api'
 
 const RollercoasterDetails = () => {
   const { id } = useParams()
@@ -46,8 +46,8 @@ const RollercoasterDetails = () => {
             <h3>Inversions: {rollercoaster.inversions}</h3>
             <h3>Duration: {rollercoaster.duration}</h3>
             <h3>Height Requirement: {rollercoaster.heightRequirement}</h3>
-          </div>
           <button onClick={() => deleteRollercoaster()}>X</button>
+          </div>
       </section>
     </div>
   )

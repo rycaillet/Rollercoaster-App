@@ -3,7 +3,7 @@ import axios from 'axios'
 import { Link, useNavigate } from 'react-router-dom'
 
 
-const Base_URL = '/api'
+const Base_URL = 'http://localhost:3001/api'
 
 const GuestCard = () => {
   let navigate = useNavigate()

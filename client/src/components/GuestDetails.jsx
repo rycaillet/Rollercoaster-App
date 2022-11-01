@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
 
-const Base_URL = '/api'
+const Base_URL = 'http://localhost:3001/api'
 
 const GuestDetails = () => {
   const { id } = useParams()
@@ -42,8 +42,8 @@ const GuestDetails = () => {
             <h2>{guest.name}</h2>
             <h3>Age: {guest.age}</h3>
             <h3>Height: {guest.height}</h3>
-          </div>
           <button onClick={() => deleteGuest()}>X</button>
+          </div>
       </section>
     </div>
   )

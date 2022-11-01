@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const RollercoasterList = () => {
   return (
-    <div>
+    <div className="rollercoaster-list">
       <RollercoasterCard />
-      <button>
-        <Link to="/rollercoasters/form">new Rollercoaster</Link>
-      </button>
+      <Link to="/rollercoasters/form">
+        <button>New Rollercoaster</button>
+      </Link>
     </div>
   )
 }

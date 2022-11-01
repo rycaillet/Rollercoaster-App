@@ -16,7 +16,7 @@ const GuestForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('/api/guests', formState)
+        axios.post('http://localhost:3001/api/guests', formState)
 
         setFormState(initialForm)
         navigate(`/guestList`)
@@ -27,9 +27,9 @@ const GuestForm = () => {
     }
 
     return (
-    <div>
+    <div className="form">
     <h1>Add New Guest</h1>
-    <div className='form'>
+    <div>
     <form onSubmit={ handleSubmit } key={formState.id}>
       <ul>
         <li><input required type="text" value={formState.name} onChange={handleChange} id={'name'} placeholder={'name'}/></li>

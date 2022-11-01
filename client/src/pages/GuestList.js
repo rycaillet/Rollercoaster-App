@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const GuestList = () => {
   return (
-    <div>
+    <div className="guest-list">
       <GuestCard />
-      <button>
-        <Link to="/guestList/form">New Guest</Link>
-      </button>
+      <Link to="/guestList/form">
+        <button>New Guest</button>
+      </Link>
     </div>
   )
 }

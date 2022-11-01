@@ -21,7 +21,7 @@ const RollercoasterForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('/api/rollercoasters', formState)
+        axios.post('http://localhost:3001/api/rollercoasters', formState)
 
         setFormState(initialForm)
         navigate(`/rollercoasters`)
@@ -32,9 +32,9 @@ const RollercoasterForm = () => {
     }
 
     return (
+    <div className="form">
+    <h1>Add New Rollercoaster</h1>
     <div>
-    <h1>Add New RollerCoaster</h1>
-    <div className='form'>
     <form onSubmit={ handleSubmit } key={formState.id}>
       <ul>
         <li><input required type="text" value={formState.name} onChange={handleChange} id={'name'} placeholder={'name'}/></li>
