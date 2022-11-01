@@ -11,6 +11,7 @@ const createRollercoaster = async (req, res) => {
 }
 
 const createGuests = async (req, res) => {
+  console.log(req.body)
   try {
     const guests = await new Guests(req.body)
     await guests.save()

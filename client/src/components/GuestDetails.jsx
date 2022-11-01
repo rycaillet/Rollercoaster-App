@@ -21,7 +21,7 @@ const GuestDetails = () => {
     if (confirm === true) {
       try {
         const response = await axios.delete(`${Base_URL}/guests/${id}`)
-        navigate('/guests')
+        navigate('/guestList')
       } catch (err) {
         console.log(err)
       }
