@@ -21,7 +21,7 @@ const RollercoasterForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/api/rollercoasters', formState)
+        axios.post('/api/rollercoasters', formState)
 
         setFormState(initialForm)
         navigate(`/rollercoasters`)

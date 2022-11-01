@@ -16,7 +16,7 @@ const GuestForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/api/guests', formState)
+        axios.post('/api/guests', formState)
 
         setFormState(initialForm)
         navigate(`/guestList`)
