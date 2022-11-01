@@ -6,7 +6,7 @@ let MONGODB_URI = process.env.MONGODB_URI
 mongoose
   .connect(MONGODB_URI)
   .then(() => {
-    console.log('Successfully connected to MongoDB')
+    console.log(`Successfully connected to MongoDB at ${MONGODB_URI}`)
   })
   .catch((e) => {
     console.error('Connection error', e.message)
