@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-
+import { createRollercoaster } from '../../../controllers'
 
 const Base_URL = 'http://localhost:3001/api'
 
-const RollercoasterCard= () => {
+const viewRollercoasters = () => {
   const [rollercoaster, setRollercoaster] = useState([])
 
   const getRollercoaster = async () => {
@@ -33,5 +33,4 @@ const RollercoasterCard= () => {
   )
 }
   
-export default RollercoasterCard
-
+export default viewRollercoasters
