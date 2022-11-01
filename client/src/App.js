@@ -2,6 +2,8 @@ import react from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import RollercoasterCard from './components/RollercoasterCard'
+import Home from './pages/Home'
+import Nav from './components/Nav'
 
 function App() {
   return (

@@ -1,9 +1,11 @@
-import viewRollercoasters from '../components/RollercoasterCard'
+import RollercoasterCard from '../components/RollercoasterCard'
 
 const rollercoasterList = () => {
   return (
     <div>
-      <viewRollercoasters />
+      <RollercoasterCard />
     </div>
   )
 }
+
+export default rollercoasterList
