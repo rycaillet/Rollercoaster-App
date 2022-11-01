@@ -1,11 +1,15 @@
 import RollercoasterCard from '../components/RollercoasterCard'
+import { Link } from 'react-router-dom'
 
-const rollercoasterList = () => {
+const RollercoasterList = () => {
   return (
     <div>
       <RollercoasterCard />
+      <button>
+        <Link to="/rollercoasters/form">new Rollercoaster</Link>
+      </button>
     </div>
   )
 }
 
-export default rollercoasterList
+export default RollercoasterList

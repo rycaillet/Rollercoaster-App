@@ -6,27 +6,32 @@ import { Link } from 'react-router-dom'
 const Base_URL = 'http://localhost:3001/api'
 
 const RollercoasterCard = () => {
-  const [rollercoaster, setRollercoaster] = useState([])
+  const [rollercoasters, setRollercoasters] = useState([])
 
   const getRollercoaster = async () => {
     const response = await axios.get(`${Base_URL}/rollercoasters`)
-    .then(setRollercoaster(response.data.rollercoaster))
-    .catch((error) => {console.log(error)})
+    setRollercoasters(response.data.rollercoaster)
   }
-
+  
+  
   useEffect(() => {
     getRollercoaster()
   }, [])
 
+
   return (
     <div className="main">
       <h1>Rollercoasters</h1>
-      <section>
-        {rollercoaster?.map((rollercoasters) => (
-          <Link to={`/rollercoaster/${rollercoasters._id}`} key={rollercoasters._id}>
-            <h2>{rollercoasters.name}</h2>
-            <img src={rollercoasters.image}></img>
-          </Link>
+      <section className = "rollercoaster-list">
+        {rollercoasters?.map((rollercoaster) => (
+          <div className="rollercoaster-card"key={rollercoaster._id}>
+            <Link to={`/rollercoasters/${rollercoaster._id}`}>
+              <h2>{rollercoaster.name}</h2>
+              <div className="rollercoaster-img-wrapper">
+                <img src={rollercoaster.image}/>
+              </div>
+            </Link>
+          </div>
         ))}
       </section>
     </div>

@@ -1,1 +1,59 @@
+body {
+  background-color: aqua;
+}
+
+.rollercoaster-list {
+display: grid;
+grid-template-columns: repeat(auto-fill, 500px);
+grid-gap: 1em
+}
+
+.rollercoaster-card {
+  border: 1px solid black
+}
+
+.rollercoaster-card:hover {
+  box-shadow: 0px 0px 3px 1px black;
+  cursor: pointer;
+}
+
+.rollercoaster-img-wrapper {
+  height: 200px;
+}
+
+.rollercoaster-img-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.guest-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 1em;
+  text-align: center;
+  }
+  
+  .guest-card {
+    border: 1px solid black
+  }
+  
+  .guest-card:hover {
+    box-shadow: 0px 0px 3px 1px black;
+    cursor: pointer;
+  }
+
+  .guest-img-wrapper {
+    height: 200px;
+  }
+  
+  /* .guest-img-wrapper:hover {
+    cursor: pointer;
+  } */
+
+  .guest-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+  }
 

@@ -6,52 +6,52 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 const main = async () => {
   const rollercoasters = [
     {
-      Name: 'Anaconda',
-      Manufacturer: 'Arrow Dynamics',
-      Speed: '50 mph',
-      Height: '128 ft',
-      Length: '2,700 ft',
-      Inversions: '4',
-      Duration: '1:50',
-      Image:
+      name: 'Anaconda',
+      manufacturer: 'Arrow Dynamics',
+      speed: '50 mph',
+      height: '128 ft',
+      length: '2,700 ft',
+      inversions: '4',
+      duration: '1:50',
+      image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/anaconda-banner.jpg',
-      HeightRequirement: '4ft'
+      heightRequirement: '4ft'
     },
     {
-      Name: 'Flight of Fear',
-      Manufacturer: 'Premier Rides',
-      Speed: '54 mph',
-      Height: '74.2 ft',
-      Length: '2,705 ft',
-      Inversions: '4',
-      Duration: '2:24',
-      Image:
+      name: 'Flight of Fear',
+      manufacturer: 'Premier Rides',
+      speed: '54 mph',
+      height: '74.2 ft',
+      length: '2,705 ft',
+      inversions: '4',
+      duration: '2:24',
+      image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/flight-of-fear-banner.jpg',
-      HeightRequirement: '4ft, 5in'
+      heightRequirement: '4ft, 5in'
     },
     {
-      Name: 'Intimidator 305',
-      Manufacturer: 'Intamin Amusement Rides',
-      Speed: '90 mph',
-      Height: '305 ft',
-      Length: '5,100 ft',
-      Inversions: '0',
-      Duration: '3:00',
-      Image:
+      name: 'Intimidator 305',
+      manufacturer: 'Intamin Amusement Rides',
+      speed: '90 mph',
+      height: '305 ft',
+      length: '5,100 ft',
+      inversions: '0',
+      duration: '3:00',
+      image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/intimidator-305-banner.jpg',
-      HeightRequirement: '4ft, 5in'
+      heightRequirement: '4ft, 5in'
     },
     {
-      Name: 'Twisted Timbers',
-      Manufacturer: 'Rocky Mountain Construction',
-      Speed: '54 mph',
-      Height: '111 ft',
-      Length: '3,361 ft',
-      Inversions: '3',
-      Duration: '2:00',
-      Image:
+      name: 'Twisted Timbers',
+      manufacturer: 'Rocky Mountain Construction',
+      speed: '54 mph',
+      height: '111 ft',
+      length: '3,361 ft',
+      inversions: '3',
+      duration: '2:00',
+      image:
         'https://cdn-cloudfront.cfauthx.com/binaries/content/gallery/kd-en-us/poi/v2/twisted-timbers-banner.jpg',
-      HeightRequirement: '4ft'
+      heightRequirement: '4ft'
     }
   ]
   await Rollercoaster.insertMany(rollercoasters)
